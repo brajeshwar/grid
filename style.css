@@ -1,0 +1,59 @@
+/*
+This style is not part of the grid.
+Its more of a helper for the demo.
+*/
+
+body {
+	width: 960px;
+	margin: 1em auto;
+}
+
+header {
+	margin: 0.5em 0;
+}
+
+hr {
+	background-color: #ababab;
+	border: 0 none;
+	height: 1px;
+	line-height: 0;
+	margin: 0.75em auto;
+	page-break-after: always;
+	width: 100%;
+}
+
+#meta {
+	text-align: right;
+	padding-top: 1em;
+}
+
+#footer-meta {
+	text-align: right;
+}
+
+.grids { margin-bottom: 1em; }
+
+.content {
+	margin: 0.75em 1em;
+}
+
+.info {
+	text-align: center;
+	padding: 1em 0;
+	margin: 0;
+}
+
+.bgclr-f0fff0 { background: #f0fff0; }
+.bgclr-e0eee0 { background: #e0eee0; }
+.bgclr-e0eeee { background: #e0eeee; }
+.bgclr-ffe1ff { background: #ffe1ff; }
+.bgclr-fff0f5 { background: #fff0f5; }
+.bgclr-ffc125 { background: #ffc125; }
+.bgclr-ffa500 { background: #ffa500; }
+.bgclr-caff70 { background: #caff70; }
+.bgclr-bcee68 { background: #bcee68; }
+.bgclr-adff2f { background: #adff2f; }
+.bgclr-fff68f { background: #fff68f; }
+.bgclr-ffd700 { background: #ffd700; }
+.bgclr-ffe7ba { background: #ffe7ba; }
+.bgclr-faf0e6 { background: #faf0e6; }

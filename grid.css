@@ -1,0 +1,21 @@
+/*
+ * Grid
+ * A simple, flexible, fluid grid system that can flow nicely inside a fluid or a fixed container.
+ * Brajeshwar, http://brajeshwar.com
+ */
+ 
+/* grids container - wrap your grids within */
+.grids {
+	overflow: hidden;
+}
+
+/* grids */
+.g1of2 { float: left; width: 50%; }
+.g1of3 { float: left; width: 33.33%; }
+.g1of4 { float: left; width: 25%; }
+.g1of5 { float: left; width: 20%; }
+.g2of3 { float: left; width: 66.66%; }
+.g2of5 { float: left; width: 40%; }
+.g3of4 { float: left; width: 75%; }
+.g3of5 { float: left; width: 60%; }
+.g4of5 { float: left; width: 80%; }
