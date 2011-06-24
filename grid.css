@@ -1,7 +1,9 @@
 /*
  * Grid
- * A simple, flexible, fluid grid system that can flow nicely inside a fluid or a fixed container.
+ * A simple, flexible, fluid grid system that can flow nicely inside a fluid or a fixed container or play good with another Grid system.
  * Brajeshwar, http://brajeshwar.com
+ *
+ * Demo & Details: http://brajeshwar.github.com/grid/
  */
  
 /* grids container - wrap your grids within */
