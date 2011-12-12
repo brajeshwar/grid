@@ -12,11 +12,11 @@
 /* grids */
 
 .g1of2, .g1of3, .g1of4, .g1of5,
-.g2of3, .g2of5,
+.g2of3, .g2of5, .g2of4,
 .g3of4, .g3of5,
 .g4of5	{ float: left; }
 
-.g1of2	{ width: 50%; }
+.g1of2, .g2of4	{ width: 50%; }
 .g1of3	{ width: 33.333333333%; }
 .g1of4	{ width: 25%; }
 .g1of5	{ width: 20%; }
