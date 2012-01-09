@@ -7,7 +7,10 @@
  */
  
 /* grids container - wrap your grids within */
-.grids { overflow: hidden; }
+.grids			{ zoom: 1; }
+.grids:before,
+.grids:after	{ display: table; *display: inline; content: ""; zoom: 1; }
+.grids:after	{ clear: both; }
 
 /* grids */
 
