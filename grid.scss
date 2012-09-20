@@ -1,0 +1,99 @@
+@import "compass";
+
+//
+// ----------------------------------------------
+// MIXINS (Helpers)
+// ----------------------------------------------
+//
+
+// Clearfix
+// Refer: http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix {
+    *zoom: 1;
+
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+//
+// ----------------------------------------------
+// GRID - Variables
+// GRID - Functions & Mixins
+// ----------------------------------------------
+//
+
+// You should be inheriting this from your Style Reset/Normalization.
+$base-line-height: 1.2 !default;
+
+$grid-columns: 12 !default;
+$grid-column-width: 100 !default;
+$grid-gutter-width: $base-line-height !default;
+
+$grid-width: ($grid-columns * $grid-column-width);
+$grid-gutter-width-pixels: $grid-gutter-width * 1px;
+
+@function column-width($span, $column-width: $grid-column-width) {
+    @return $span * $column-width;
+}
+
+@function percent-width($target, $context) {
+    @return ($target / $context) * 100%;
+}
+
+@mixin row($span: $grid-columns) {
+    @include clearfix;
+}
+
+@mixin span($span, $context: $grid-columns) {
+    width: percent-width(column-width($span, $grid-column-width), column-width($context, $grid-column-width));
+}
+
+@mixin col {
+    @include box-sizing(border-box);
+    float: left;
+    padding-right: $grid-gutter-width / 2;
+    padding-left: $grid-gutter-width / 2;
+}
+
+@mixin prepend($span, $context: $grid-columns) {
+    padding-left: percent-width(column-width($span, $grid-column-width), column-width($context, $grid-column-width));
+}
+
+@mixin append($span, $context: $grid-columns) {
+    padding-right: percent-width(column-width($span, $grid-column-width), column-width($context, $grid-column-width));
+}
+
+@mixin column-first {
+    padding-left: 0 !important;
+}
+
+@mixin column-last {
+    padding-right: 0 !important;
+}
+
+/*
+ * ----------------------------------------------
+ * GRID
+ * ----------------------------------------------
+*/
+
+.row {
+    @include row;
+}
+
+[class*="col-"] {
+    @include col;
+}
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        @include span($i);
+    }
+}

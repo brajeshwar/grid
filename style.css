@@ -1,59 +1,30 @@
 /*
-This style is not part of the grid.
-Its more of a helper for the demo.
+ * ----------------------------------------------
+ * Optional helper styles
+ * What you need is just the "grid" styles - grid.scss or grid.css
+ * ----------------------------------------------
 */
-
 body {
-	width: 960px;
-	margin: 1em auto;
-}
-
-header {
-	margin: 0.5em 0;
+  width: 80%;
+  margin: 2em auto;
+  padding: 0;
+  background: #efefef;
+  color: #444;
+  text-shadow: rgba(255, 255, 255, 0.75) 0 1px 0;
 }
 
 hr {
-	background-color: #ababab;
-	border: 0 none;
-	height: 1px;
-	line-height: 0;
-	margin: 0.75em auto;
-	page-break-after: always;
-	width: 100%;
+  display: block;
+  height: 0;
+  margin: 1em 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #fff;
 }
 
-#meta {
-	text-align: right;
-	padding-top: 1em;
+[class*="col-"] {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #aaa;
 }
-
-#footer-meta {
-	text-align: right;
-}
-
-.grids { margin-bottom: 1em; }
-
-.content {
-	margin: 0.75em 1em;
-}
-
-.info {
-	text-align: center;
-	padding: 1em 0;
-	margin: 0;
-}
-
-.bgclr-f0fff0 { background: #f0fff0; }
-.bgclr-e0eee0 { background: #e0eee0; }
-.bgclr-e0eeee { background: #e0eeee; }
-.bgclr-ffe1ff { background: #ffe1ff; }
-.bgclr-fff0f5 { background: #fff0f5; }
-.bgclr-ffc125 { background: #ffc125; }
-.bgclr-ffa500 { background: #ffa500; }
-.bgclr-caff70 { background: #caff70; }
-.bgclr-bcee68 { background: #bcee68; }
-.bgclr-adff2f { background: #adff2f; }
-.bgclr-fff68f { background: #fff68f; }
-.bgclr-ffd700 { background: #ffd700; }
-.bgclr-ffe7ba { background: #ffe7ba; }
-.bgclr-faf0e6 { background: #faf0e6; }

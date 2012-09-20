@@ -1,36 +1,72 @@
 /*
- * Grid
- * A simple, flexible, fluid grid system that can flow nicely inside a fluid or a fixed container or play good with another Grid system.
- * 
- * Brajeshwar
- * http://brajeshwar.com
- * Follow @Brajeshwar on Twitter
- *
- * Demo & Details: http://brajeshwar.github.com/grid/
- */
- 
-/* grids container - wrap your grids within */
-.grids			{ zoom: 1; }
-.grids:before,
-.grids:after	{ display: table; *display: inline; content: ""; zoom: 1; }
-.grids:after	{ clear: both; }
+ * ----------------------------------------------
+ * GRID
+ * ----------------------------------------------
+*/
+.row {
+  *zoom: 1;
+}
+.row:before, .row:after {
+  display: table;
+  content: "";
+}
+.row:after {
+  clear: both;
+}
 
-/* grids */
+[class*="col-"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  padding-right: 12px;
+  padding-left: 12px;
+}
 
-.g1of2, .g1of3, .g1of4, .g1of5,
-.g2of3, .g2of5,
-.g3of4, .g3of5,
-.g4of5	{ float: left; }
+.col-1 {
+  width: 8.333%;
+}
 
-.g1of2	{ width: 50%; }
-.g1of3	{ width: 33.333333333%; }
-.g1of4	{ width: 25%; }
-.g1of5	{ width: 20%; }
+.col-2 {
+  width: 16.667%;
+}
 
-.g2of3	{ width: 66.666666666%; }
-.g2of5	{ width: 40%; }
+.col-3 {
+  width: 25%;
+}
 
-.g3of4	{ width: 75%; }
-.g3of5	{ width: 60%; }
+.col-4 {
+  width: 33.333%;
+}
 
-.g4of5	{ width: 80%; }
+.col-5 {
+  width: 41.667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.333%;
+}
+
+.col-8 {
+  width: 66.667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.333%;
+}
+
+.col-11 {
+  width: 91.667%;
+}
+
+.col-12 {
+  width: 100%;
+}

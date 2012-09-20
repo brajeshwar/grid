@@ -2,147 +2,149 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
 <title>Grid</title>
 
-<meta name="description" content="A simple and minimal fluid grid system that can flow inside any fluid or fixed container.">
-<meta name="keywords" value="CSS, grid, percentage, fluid, fixed">
-
 <link rel="stylesheet" href="grid.css">
-
-<!-- styles meant for presentation of this demo -->
-<link rel="stylesheet" href="gridless.css">
 <link rel="stylesheet" href="style.css">
 
-<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
 
-<a href="http://github.com/Brajeshwar/grid/">
+<a href="https://github.com/brajeshwar/grid/">
 	<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
 </a>
 
-<header class="grids">
-	<div class="g1of2">
-		<h1><a href="">Grid</a></h1>
-	</div>
-	<div id="meta" class="g1of2">
-		&rsaquo; <a href="http://brajeshwar.com/2011/grid-a-minimal-css-grid-utility/">Read the related article</a>
-		&bull;
-		Tweet @<a href="http://twitter.com/Brajeshwar">Brajeshwar</a>
-	</div>
+<header>
+	<h1><a href="">Grid</a></h1>
+	<p>A simple and minimal fluid grid system that can flow inside any fluid or fixed container.</p>
+	<p>
+		<ul>
+			<li>Read the <a href="http://brajeshwar.com/2011/grid-a-minimal-css-grid-utility/">related article</a>.</li>
+			<li>Tweet @<a href="http://twitter.com/Brajeshwar">Brajeshwar</a> for questions.</li>
+			<li>
+				Download as a <a href="https://github.com/Brajeshwar/grid/zipball/master">zip</a>
+				or <a href="https://github.com/Brajeshwar/grid/tarball/master">tar</a> package
+				or clone the source from Github - <a href="https://github.com/brajeshwar/grid">github.com/brajeshwar/grid</a>.
+			</li>
+		</ul>
+	</p>
 </header>
 
 <hr />
 
-<h2>3 equal columns</h2>
+<h2>Full width of the Body</h2>
 
-<div class="grids">
-	<div class="g1of3 bgclr-f0fff0">
-		<article class="content">
-			<h3>What is this Grid?</h3>
-			<p>A simple and minimal fluid grid system that can flow inside any fluid or fixed container.</p>
-		</article>
+<div style="width: 100%; background: #fff;">
+	<div class="row">
+		<div class="col-1">COL-1</div>
+		<div class="col-11">COL-11</div>
 	</div>
-	<div class="g1of3 bgclr-e0eee0">
-		<article class="content">
-			<h3>Download (Source)</h3>
-			<p>
-				Download as a <a href="https://github.com/Brajeshwar/grid/zipball/master">zip</a>
-				or <a href="https://github.com/Brajeshwar/grid/tarball/master">tar</a> package.
-				or clone the source from Github - <a href="https://github.com/Brajeshwar/grid">github.com/Brajeshwar/grid</a>.
-			</p>
-		</article>
+	<div class="row">
+		<div class="col-2">COL-2</div>
+		<div class="col-10">COL-10</div>
 	</div>
-	<div class="g1of3 bgclr-e0eeee">
-		<article class="content">
-			<h3>Contribute</h3>
-			<p>You can contribute by sending a <a href="https://github.com/Brajeshwar/grid/pulls">pull request</a> or <a href="https://github.com/Brajeshwar/grid/issues">an issue</a>. You can also fork the project or clone it.</p>
-		</article>
+	<div class="row">
+		<div class="col-3">COL-3</div>
+		<div class="col-9">COL-9</div>
 	</div>
-</div>
-
-<p><em>Note: Content henceforth are just fillers.</em></p>
-<h2>1:2 Column</h2>
-
-<div class="grids">
-	<div class="g1of3 bgclr-ffe1ff">
-		<article class="content">
-			<p>A tremor in the Force. The last time I felt it was in the presence of my old master. The plans you refer to will soon be back in our hands.</p>
-			<p>Hey, Luke! May the Force be with you. The Force is strong with this one. I have you now. But with the blast shield down, I can't even see! How am I supposed to fight?</p>
-		</article>
+	<div class="row">
+		<div class="col-4">COL-4</div>
+		<div class="col-8">COL-8</div>
 	</div>
-	<div class="g2of3 bgclr-fff0f5">
-		<article class="content">
-			<p>Partially, but it also obeys your commands. Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force. I can't get involved! I've got work to do! It's not that I like the Empire, I hate it, but there's nothing I can do about it right now. It's such a long way from here.</p>
-			<p>I'm trying not to, kid. I find your lack of faith disturbing. He is here. I care. So, what do you think of her, Han? No! Alderaan is peaceful. We have no weapons. You can't possibly... Still, she's got a lot of spirit. I don't know, what do you think? You think a princess and a guy like me-</p>
-		</article>
+	<div class="row">
+		<div class="col-5">COL-5</div>
+		<div class="col-7">COL-7</div>
 	</div>
-</div>
-
-<h2>2:3 Column</h2>
-
-<div class="grids">
-	<div class="g2of5 bgclr-f0fff0">
-		<article class="content">
-			<p>I suggest you try it again, Luke. This time, let go your conscious self and act on instinct. Dantooine. They're on Dantooine.</p>
-			<p>Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid. I'm in it for the money. The more you tighten your grip, Tarkin, the more star systems will slip through your fingers. As you wish.</p>
-		</article>
+	<div class="row">
+		<div class="col-6">COL-6</div>
+		<div class="col-6">COL-6</div>
 	</div>
-	<div class="g3of5 bgclr-e0eee0">
-		<article class="content">
-			<p>She must have hidden the plans in the escape pod. Send a detachment down to retrieve them, and see to it personally, Commander.</p>
-			<p>There'll be no one to stop us this time! What good is a reward if you ain't around to use it? Besides, attacking that battle station ain't my idea of courage. It's more like...suicide.  Your eyes can deceive you. Don't trust them. Obi-Wan is here. The Force is with him. All right.</p>
-			<p>Well, take care of yourself, Han. I guess that's what you're best at, ain't it?</p>
-		</article>
+	<div class="row">
+		<div class="col-7">COL-7</div>
+		<div class="col-5">COL-5</div>
+	</div>
+	<div class="row">
+		<div class="col-8">COL-8</div>
+		<div class="col-4">COL-4</div>
+	</div>
+	<div class="row">
+		<div class="col-9">COL-9</div>
+		<div class="col-3">COL-3</div>
+	</div>
+	<div class="row">
+		<div class="col-10">COL-10</div>
+		<div class="col-2">COL-2</div>
+	</div>
+	<div class="row">
+		<div class="col-11">COL-11</div>
+		<div class="col-1">COL-1</div>
 	</div>
 </div>
 
-<h2>Grids inside Grids</h2>
+<h2>Set Width at 960px</h2>
 
-<div class="grids bgclr-faf0e6">
-	<div class="g1of2 grids bgclr-ffc125">
-		<p class="info">Parent column with 2 twin child columns.</p>
-		<div class="g1of2 bgclr-caff70">
-			<article class="content">
-				<p>How do you know she is a witch? Did you dress her up like this? The swallow may fly south with the sun, and the house martin or the plover may seek warmer climes in winter, yet these are not strangers to our land. You don't vote for kings. The Knights Who Say Ni demand a sacrifice!</p>
-			</article>
-		</div>
-		<div class="g1of2 bgclr-bcee68">
-			<article class="content">
-				<p>I am your king. Ni! Ni! Ni! Ni! We want a shrubbery!!</p>
-				<p>What a strange person. Burn her! ...Are you suggesting that coconuts migrate? What do you mean? Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! But you are dressed as one...</p>
-			</article>
-		</div>
+<div style="width: 960px; background: #fff;">
+	<div class="row">
+		<div class="col-1">COL-1</div>
+		<div class="col-11">COL-11</div>
 	</div>
-	<div class="g1of2 grids bgclr-ffa500">
-		<p class="info">Parent column with 1:3 child columns.</p>
-		<div class="g1of3 bgclr-fff68f">
-			<article class="content">
-				<p>Well, I didn't vote for you. Well, I got better.  And this isn't my nose. This is a false one. Listen. Strange women lying in ponds distributing swords is no basis for a system of government.</p>
-			</article>
-		</div>
-		<div class="g2of3 bgclr-ffd700">
-			<article class="content">
-				<p>Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.</p>
-				<p>No, no, no! Yes, yes. A bit. But she's got a wart.</p>
-				<p>Ah, now we see the violence inherent in the system! Well, she turned me into a newt.  Who's that then? Found them? In Mercia?! The coconut's tropical! The nose?</p>
-			</article>
-		</div>
+	<div class="row">
+		<div class="col-2">COL-2</div>
+		<div class="col-10">COL-10</div>
+	</div>
+	<div class="row">
+		<div class="col-3">COL-3</div>
+		<div class="col-9">COL-9</div>
+	</div>
+	<div class="row">
+		<div class="col-4">COL-4</div>
+		<div class="col-8">COL-8</div>
+	</div>
+	<div class="row">
+		<div class="col-5">COL-5</div>
+		<div class="col-7">COL-7</div>
+	</div>
+	<div class="row">
+		<div class="col-6">COL-6</div>
+		<div class="col-6">COL-6</div>
+	</div>
+	<div class="row">
+		<div class="col-7">COL-7</div>
+		<div class="col-5">COL-5</div>
+	</div>
+	<div class="row">
+		<div class="col-8">COL-8</div>
+		<div class="col-4">COL-4</div>
+	</div>
+	<div class="row">
+		<div class="col-9">COL-9</div>
+		<div class="col-3">COL-3</div>
+	</div>
+	<div class="row">
+		<div class="col-10">COL-10</div>
+		<div class="col-2">COL-2</div>
+	</div>
+	<div class="row">
+		<div class="col-11">COL-11</div>
+		<div class="col-1">COL-1</div>
 	</div>
 </div>
 
-<hr />
+<h2>Nested Column</h2>
 
-<footer class="grids">
-	<section class="g1of3">
-		<p>No Rights Reserved.</p>
-	</section>
-	<section id="footer-meta" class="g2of3">
-		<p>Content generated via <a href="http://chrisvalleskey.com/fillerama/">Fillerama</a> &bull; Non-Grid styles by <a href="http://thatcoolguy.github.com/gridless-boilerplate/">Gridless</a></p>
-	</section>
-</footer>
+<div style="width: 900px; background: #fff;">
+	<div class="row">
+		<div class="col-6">
+			<div class="row">
+			<div class="col-5">COL-5</div>
+			<div class="col-7">COL-7</div>
+			</div>
+		</div>
+		<div class="col-6">
+			COL-6
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
