@@ -1,0 +1,16 @@
+# PROJECT FOLDERS & FILES
+
+*.sublime-project
+
+# ---------------------------------------------- #
+
+### SublimeText ###
+*.sublime-workspace
+
+### SASS ###
+*.sass-cache
+
+### Compass ###
+.sass-cache
+
+# ---------------------------------------------- #

@@ -1,12 +1,19 @@
+#
 # COMPASS
-# ----------------------------------------------
+# --------------------------------------------------------------------------------------------
 # Configuration
 # http://compass-style.org/help/tutorials/configuration-reference/
-#
-# ----------------------------------------------
+# --------------------------------------------------------------------------------------------
+# DEVELOPMENT
+# $ compass watch
+# --------------------------------------------------------------------------------------------
 # PRODUCTION
-# compass compile -e production -s compressed --no-line-comments --force
-# ----------------------------------------------
+# $ compass compile -e production -s compressed --no-line-comments --force --trace --time
+# --------------------------------------------------------------------------------------------
+#
+# Config is loaded when you begin "compass watch".
+# If you make a change to the config file, you've to re-start the "compass watch".
+# --------------------------------------------------------------------------------------------
 #
 
 # Can be :stand_alone or :rails. Defaults to :stand_alone
@@ -15,7 +22,10 @@ project_type = :stand_alone
 # paths
 http_path       = "/"
 css_dir         = ""
-sass_dir        = ""
+sass_dir        = "sass"
+fonts_dir       = "fonts"
+images_dir      = "images"
+javascripts_dir = "scripts"
 
 # output option: nested, expanded, compact, compressed
 output_style = :expanded
@@ -33,3 +43,12 @@ relative_assets = true
 
 # disable the asset cache buster
 asset_cache_buster :none
+
+# Color output
+color_output = true
+
+# import paths
+# add_import_path = ""
+
+# SASS core
+Sass::Script::Number.precision = 5
