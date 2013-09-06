@@ -1,0 +1,26 @@
+name                : Grid
+source              : .
+destination         : ./_site
+plugins             : ./_plugins
+layouts             : ./_layouts
+include             : ['.htaccess']
+exclude             : ['*.sublime-workspace',
+                      '*.sublime-project',
+                      '.DS_Store',
+                      'README.md',
+                      'TODO.md',
+                      'CHANGELOG.md'
+                      ]
+
+keep_files          : ['.git']
+
+future              : true
+show_drafts         : nil
+limit_posts         : 0
+
+permalink           : pretty
+relative_permalinks : true
+paginate_path       : 'page:num'
+
+markdown            : maruku
+markdown_ext        : markdown,mkd,mkdn,md
