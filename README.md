@@ -1,9 +1,8 @@
 # Grid
 
-A simple, bare-bone fluid grid system that can flow inside any fluid or fixed container.
-"Grid" can co-exist or mixed with any other CSS Grid Framework.
+A simple, bare-bone responsive grid system.
 
-USAGE
+## Requirements
 
-* Add a class "grids" to any container.
-* Define your desired grid size by applying "gxofy" where "x" is the segment of the "y" whole.
+* [Sass](http://sass-lang.com/) ~v3.2.10
+* [Compass](http://compass-style.org/) ~ 0.12.0

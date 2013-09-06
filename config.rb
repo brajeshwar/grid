@@ -46,9 +46,3 @@ asset_cache_buster :none
 
 # Color output
 color_output = true
-
-# import paths
-# add_import_path = ""
-
-# SASS core
-Sass::Script::Number.precision = 5
