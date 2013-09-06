@@ -1,8 +1,0 @@
-TODO
-----
-
-* Get rid of gridless.
-* Config options.
-* Responsive, Mobile-First.
-* A LESS version of grid.
-* Perhaps a Stylus version of grid.
