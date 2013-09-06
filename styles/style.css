@@ -1,3 +1,21 @@
+.column,
+.columns {
+  background: #eee;
+  border-right: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 1em;
+}
+.column:first-child,
+.columns:first-child {
+  border-left: 1px solid #aaaaaa;
+}
+
+body {
+  margin: 0 auto;
+  background: white;
+  color: #3a3a3a;
+}
+
 hr {
   border-top: 1px solid #aaaaaa;
   border-bottom: 0;
@@ -9,19 +27,14 @@ hr {
   min-height: 0;
 }
 
+header {
+  background: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  padding: 0.25em 0;
+  margin-bottom: 2em;
+}
+
 .env {
   max-width: 1140px;
   margin: 0 auto;
-}
-
-.column,
-.columns {
-  background: #eee;
-  border-right: 1px solid #aaaaaa;
-  border-bottom: 1px solid #aaaaaa;
-  padding: 1em;
-}
-.column:first-child,
-.columns:first-child {
-  border-left: 1px solid #aaaaaa;
 }

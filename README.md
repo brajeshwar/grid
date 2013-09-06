@@ -1,6 +1,6 @@
 # Grid
 
-A simple, bare-bone responsive grid system.
+A simple & semantic responsive grid system.
 
 ## Requirements
 

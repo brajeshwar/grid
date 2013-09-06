@@ -3,114 +3,108 @@ layout: default
 title: Grid
 ---
 
-<div class="env">
+<div class="row">
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-1 large-1">1</div>
+</div>
 
-  <h1>Grid</h1>
+<div class="row">
+  <div class="column small-12 medium-1 large-1">1</div>
+  <div class="column small-12 medium-11 large-11">11</div>
+</div>
 
-  <div class="row">
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-1 large-1">1</div>
-  </div>
+<div class="row">
+  <div class="column small-12 medium-2 large-2">2</div>
+  <div class="column small-12 medium-10 large-10">10</div>
+</div>
 
-  <div class="row">
-    <div class="column small-12 medium-1 large-1">1</div>
-    <div class="column small-12 medium-11 large-11">11</div>
-  </div>
+<div class="row">
+  <div class="column small-12 medium-6 large-6">6</div>
+  <div class="column small-12 medium-6 large-6">6</div>
+</div>
 
-  <div class="row">
-    <div class="column small-12 medium-2 large-2">2</div>
-    <div class="column small-12 medium-10 large-10">10</div>
-  </div>
+<hr>
 
-  <div class="row">
-    <div class="column small-12 medium-6 large-6">6</div>
-    <div class="column small-12 medium-6 large-6">6</div>
-  </div>
+<h2>Nested Grid</h2>
 
-  <hr>
-
-  <h2>Nested Grid</h2>
-
-  <div class="row">
-    <div class="small-8 columns">8
-      <div class="row">
-        <div class="small-8 columns">8 Nested
-          <div class="row">
-            <div class="small-8 columns">8 Nested Again</div>
-            <div class="small-4 columns">4</div>
-          </div>
+<div class="row">
+  <div class="small-8 columns">8
+    <div class="row">
+      <div class="small-8 columns">8 Nested
+        <div class="row">
+          <div class="small-8 columns">8 Nested Again</div>
+          <div class="small-4 columns">4</div>
         </div>
-        <div class="small-4 columns">4</div>
       </div>
+      <div class="small-4 columns">4</div>
     </div>
-    <div class="small-4 columns">4</div>
   </div>
+  <div class="small-4 columns">4</div>
+</div>
 
-  <h2>Offsets</h2>
+<h2>Offsets</h2>
 
-  <div class="row">
-    <div class="large-1 columns">1</div>
-    <div class="large-11 columns">11</div>
-  </div>
-  <div class="row">
-    <div class="large-1 columns">1</div>
-    <div class="large-10 large-offset-1 columns">10, offset 1</div>
-  </div>
-  <div class="row">
-    <div class="large-1 columns">1</div>
-    <div class="large-9 large-offset-2 columns">9, offset 2</div>
-  </div>
-  <div class="row">
-    <div class="large-1 columns">1</div>
-    <div class="large-8 large-offset-3 columns">8, offset 3</div>
-  </div>
+<div class="row">
+  <div class="large-1 columns">1</div>
+  <div class="large-11 columns">11</div>
+</div>
+<div class="row">
+  <div class="large-1 columns">1</div>
+  <div class="large-10 large-offset-1 columns">10, offset 1</div>
+</div>
+<div class="row">
+  <div class="large-1 columns">1</div>
+  <div class="large-9 large-offset-2 columns">9, offset 2</div>
+</div>
+<div class="row">
+  <div class="large-1 columns">1</div>
+  <div class="large-8 large-offset-3 columns">8, offset 3</div>
+</div>
 
-  <h2>Centered</h2>
+<h2>Centered</h2>
 
-  <div class="row">
-    <div class="small-3 small-centered columns">3 centered</div>
-  </div>
-  <div class="row">
-    <div class="small-6 large-centered columns">6 centered</div>
-  </div>
-  <div class="row">
-    <div class="small-9 small-centered large-uncentered columns">9 centered</div>
-  </div>
-  <div class="row">
-    <div class="small-11 small-centered columns">11 centered</div>
-  </div>
+<div class="row">
+  <div class="small-3 small-centered columns">3 centered</div>
+</div>
+<div class="row">
+  <div class="small-6 large-centered columns">6 centered</div>
+</div>
+<div class="row">
+  <div class="small-9 small-centered large-uncentered columns">9 centered</div>
+</div>
+<div class="row">
+  <div class="small-11 small-centered columns">11 centered</div>
+</div>
 
-  <h2>Source Ordering</h2>
+<h2>Source Ordering</h2>
 
-  <div class="row">
-    <div class="small-2 push-10 columns">2</div>
-    <div class="small-10 pull-2 columns">10, last</div>
-  </div>
-  <div class="row">
-    <div class="small-3 push-9 columns">3</div>
-    <div class="small-9 pull-3 columns">9, last</div>
-  </div>
-  <div class="row">
-    <div class="small-4 push-8 columns">4</div>
-    <div class="small-8 pull-4 columns">8, last</div>
-  </div>
-  <div class="row">
-    <div class="small-5 push-7 columns">5</div>
-    <div class="small-7 pull-5 columns">5, last</div>
-  </div>
-  <div class="row">
-    <div class="small-6 push-6 columns">6</div>
-    <div class="small-6 pull-6 columns">6, last</div>
-  </div>
-
-</div> <!-- /env -->
+<div class="row">
+  <div class="small-2 push-10 columns">2</div>
+  <div class="small-10 pull-2 columns">10, last</div>
+</div>
+<div class="row">
+  <div class="small-3 push-9 columns">3</div>
+  <div class="small-9 pull-3 columns">9, last</div>
+</div>
+<div class="row">
+  <div class="small-4 push-8 columns">4</div>
+  <div class="small-8 pull-4 columns">8, last</div>
+</div>
+<div class="row">
+  <div class="small-5 push-7 columns">5</div>
+  <div class="small-7 pull-5 columns">5, last</div>
+</div>
+<div class="row">
+  <div class="small-6 push-6 columns">6</div>
+  <div class="small-6 pull-6 columns">6, last</div>
+</div>

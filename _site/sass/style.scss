@@ -1,6 +1,11 @@
 @import "compass";
 
-$color-border: #aaa;
+$white:             #fff !default;
+$black:             #000 !default;
+
+$color-background:  $white !default;
+$color-body:        #3a3a3a !default;
+$color-border:      #aaa !default;
 
 .column,
 .columns {
@@ -14,6 +19,12 @@ $color-border: #aaa;
   }
 }
 
+body {
+  margin: 0 auto;
+  background: $color-background;
+  color: $color-body;
+}
+
 hr {
   border-top: 1px solid $color-border;
   border-bottom: 0;
@@ -23,4 +34,16 @@ hr {
   height: 1px;
   margin: rhythm() 0;
   min-height: 0;
+}
+
+header {
+  background: darken($color-background, 5%);
+  border-bottom: 1px solid #ccc;
+  padding: 0.25em 0;
+  margin-bottom: 2em;
+}
+
+.env {
+  max-width: 1140px;
+  margin: 0 auto;
 }

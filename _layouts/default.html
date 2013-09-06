@@ -5,20 +5,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>{{ page.title }}</title>
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="styles/grid.css">
+<link rel="stylesheet" href="styles/normalize.css">
 <link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/grid.css">
 </head>
 <body>
 
 <header>
-
+  <div class="env">
+    <h1>Grid</h1>
+  </div>
 </header>
 
-{{ content }}
+<div class="env">
 
-<footer>
+  {{ content }}
 
-</footer>
+</div>
 
 </body>
 </html>
