@@ -1,8 +1,7 @@
-# Grid
+# Warning
+
+> While a simple and easy-to-use for its time, this framework may not longer reflect modern best practices. -- [Brajeshwar](//brajeshwar.me/)
+
+## Grid
 
 A simple & semantic responsive grid system.
-
-## Requirements
-
-* [Sass](http://sass-lang.com/) ~v3.2.10
-* [Compass](http://compass-style.org/) ~ 0.12.0
